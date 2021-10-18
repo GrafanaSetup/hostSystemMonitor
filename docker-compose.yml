@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  network-monitor:
+    restart: always
+    build: ./app
+    networks:
+      - basicsetup_some-net
+networks:
+  basicsetup_some-net:
+    external: true
