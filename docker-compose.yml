@@ -3,7 +3,7 @@ version: "3.5"
 services:
   host-system-monitor:
     restart: always
-    build: ./app
+    build: .
     networks:
       - basicsetup_some-net
 networks:
