@@ -4,6 +4,9 @@ services:
   host-system-monitor:
     restart: always
     build: .
+    ports:
+    - "8000:8000"
+
     networks:
       - basicsetup_some-net
 networks:
